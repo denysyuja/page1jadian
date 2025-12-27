@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for u mommy</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            background-image: 
+                linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                url('https://i.pinimg.com/736x/5f/33/9e/5f339ec4c7ca8458c7e834ae32159a48.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            width: 300px;
+        }
+
+        img {
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #ff4d6d;
+            font-size: 22px;
+        }
+
+        .btn-group {
+            margin-top: 20px;
+            position: relative;
+            height: 100px;
+        }
+
+        button {
+            padding: 10px 25px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #btnMau {
+            background-color: #ff4d6d;
+            color: white;
+            margin-right: 10px;
+        }
+
+        #btnTidak {
+            background-color: #ccc;
+            color: white;
+            position: absolute;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHIybHh6ZnR6YnkxaGZ6ZzB3bmZ6ZzB3bmZ6ZzB3bmZ6ZzB3JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/MDJ9IbxxvDUQM/giphy.gif" alt="Cute Cat">
+
+    <h1>would you be my girlfriend mommy? 🥺</h1>
+
+    <div class="btn-group">
+        <button id="btnMau" onclick="pindahHalaman()">mau bangett</button>
+        <button id="btnTidak" onmouseover="pindahTombol()">mau aja</button>
+    </div>
+</div>
+
+<script>
+    function pindahTombol() {
+        const x = Math.random() * (window.innerWidth - 120);
+        const y = Math.random() * (window.innerHeight - 120);
+        const btn = document.getElementById('btnTidak');
+        btn.style.left = x + 'px';
+        btn.style.top = y + 'px';
+    }
+
+    function pindahHalaman() {
+        window.location.href = "web.html";
+    }
+</script>
+
+</body>
+</html>
